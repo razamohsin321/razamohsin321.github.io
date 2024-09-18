@@ -2,7 +2,7 @@
 title: "Thomas Rose"
 about:
   id: template-area
-  template: jolla
+  template: solana
   image: profile.png
   links:
     - icon: twitter
@@ -25,7 +25,8 @@ about:
 
 Here goes the information about you. 
 
-:::
+:::Mohsin Raza
+PhD student at KIT, Germany.
 
 ## Legal Notice
 
