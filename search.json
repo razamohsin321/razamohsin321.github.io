@@ -28,27 +28,6 @@
     "text": "This webpage does not use any cookies. It does not collect, store or process personal data. The website is hosted by GitHub Inc. using GitHub pages. The privacy statement of Github is available here."
   },
   {
-    "objectID": "assets/report.html",
-    "href": "assets/report.html",
-    "title": "Random report",
-    "section": "",
-    "text": "Because there must be some content for inspiration, let’s see how random random numbers in R really are."
-  },
-  {
-    "objectID": "assets/report.html#the-randomness-of-r",
-    "href": "assets/report.html#the-randomness-of-r",
-    "title": "Random report",
-    "section": "",
-    "text": "Because there must be some content for inspiration, let’s see how random random numbers in R really are."
-  },
-  {
-    "objectID": "assets/report.html#uniformly-distributed-random-numbers",
-    "href": "assets/report.html#uniformly-distributed-random-numbers",
-    "title": "Random report",
-    "section": "Uniformly distributed random numbers",
-    "text": "Uniformly distributed random numbers\nUniformly distributed random number means that all number have the same chance to get drawn from the pool. There are multiple methods to produce such numbers.\nThe most common command to create a uniform distribution of random numbers in R is runif(), standing for random uniform. There is also the command sample() which is a bit more complex and therefore not further discussed here.\nBy default, runif() samples the range from 0 to 1:"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "This is the Home page of your web site.",

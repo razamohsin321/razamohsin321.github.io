@@ -113,15 +113,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#the-randomness-of-r" id="toc-the-randomness-of-r" class="nav-link active" data-scroll-target="#the-randomness-of-r">The randomness of R</a></li>
-  <li><a href="#uniformly-distributed-random-numbers" id="toc-uniformly-distributed-random-numbers" class="nav-link" data-scroll-target="#uniformly-distributed-random-numbers">Uniformly distributed random numbers</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -188,39 +181,10 @@ import matplotlib.pyplot as plt
 filePath = 'https://raw.githubusercontent.com/Hezel2000/GeoCosmoChemDataAndTools/refs/heads/main/csv/Baical%20Rift%20Zone.csv'
 with open(filePath, 'r') as file:
     fileString = file.read()
-def parseProtocol(fileString):
-    DATA = {'val1': [],'val2': list(),'val3': [],}
 
-    for row in fileString.split('\n'): 
-        if len(row) <3 :
-            continue
-
-        print(row)
-        values = row.split(' ')
-
-        print(values)
-
-        DATA['val1'].append(float(values[0]))
-        DATA['val2'].append(float(values[1]))
-        DATA['val3'].append(float(values[2]))
-
-    return DATA
-DATA = parseProtocol(fileString)
-
-print(DATA)
 -->
-<section id="the-randomness-of-r" class="level2">
-<h2 class="anchored" data-anchor-id="the-randomness-of-r">The randomness of R</h2>
-<p>Because there must be some content for inspiration, let’s see how random random numbers in R really are.</p>
-</section>
-<section id="uniformly-distributed-random-numbers" class="level2">
-<h2 class="anchored" data-anchor-id="uniformly-distributed-random-numbers">Uniformly distributed random numbers</h2>
-<p>Uniformly distributed random number means that all number have the same chance to get drawn from the pool. There are multiple methods to produce such numbers.</p>
-<p>The most common command to create a uniform distribution of random numbers in R is <code>runif()</code>, standing for <strong>r</strong>andom <strong>unif</strong>orm. There is also the command <code>sample()</code> which is a bit more complex and therefore not further discussed here.</p>
-<p>By default, <code>runif()</code> samples the range from 0 to 1:</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
