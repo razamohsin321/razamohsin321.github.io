@@ -45,38 +45,5 @@ import matplotlib.pyplot as plt
 filePath = 'https://raw.githubusercontent.com/Hezel2000/GeoCosmoChemDataAndTools/refs/heads/main/csv/Baical%20Rift%20Zone.csv'
 with open(filePath, 'r') as file:
     fileString = file.read()
-def parseProtocol(fileString):
-    DATA = {'val1': [],'val2': list(),'val3': [],}
 
-    for row in fileString.split('\n'): 
-        if len(row) <3 :
-            continue
-
-        print(row)
-        values = row.split(' ')
-
-        print(values)
-
-        DATA['val1'].append(float(values[0]))
-        DATA['val2'].append(float(values[1]))
-        DATA['val3'].append(float(values[2]))
-
-    return DATA
-DATA = parseProtocol(fileString)
-
-print(DATA)
 --> 
-
-## The randomness of R
-
-Because there must be some content for inspiration, let's see how random random numbers in R really are. 
-
-## Uniformly distributed random numbers
-
-Uniformly distributed random number means that all number have the same chance to get drawn from the pool. There are multiple methods to produce such numbers. 
-
-The most common command to create a uniform distribution of random numbers in R is `runif()`, standing for **r**andom **unif**orm. There is also the command `sample()` which is a bit more complex and therefore not further discussed here. 
-
-By default, `runif()` samples the range from 0 to 1: 
-
-
