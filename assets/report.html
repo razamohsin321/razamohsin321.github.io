@@ -184,7 +184,30 @@ Add between lines 15 and 16:
       - run: pip install -r requirements.txt 
 
 Make sure identations are correct! 
+import matplotlib.pyplot as plt
+filePath = 'https://raw.githubusercontent.com/Hezel2000/GeoCosmoChemDataAndTools/refs/heads/main/csv/Baical%20Rift%20Zone.csv'
+with open(filePath, 'r') as file:
+    fileString = file.read()
+def parseProtocol(fileString):
+    DATA = {'val1': [],'val2': list(),'val3': [],}
 
+    for row in fileString.split('\n'): 
+        if len(row) <3 :
+            continue
+
+        print(row)
+        values = row.split(' ')
+
+        print(values)
+
+        DATA['val1'].append(float(values[0]))
+        DATA['val2'].append(float(values[1]))
+        DATA['val3'].append(float(values[2]))
+
+    return DATA
+DATA = parseProtocol(fileString)
+
+print(DATA)
 -->
 <section id="the-randomness-of-r" class="level2">
 <h2 class="anchored" data-anchor-id="the-randomness-of-r">The randomness of R</h2>
