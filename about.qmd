@@ -25,7 +25,7 @@ about:
 
 Here goes the information about you. 
 
-:::Mohsin Raza
+Mohsin Raza
 PhD student at KIT, Germany.
 
 ## Legal Notice
