@@ -1,10 +1,10 @@
 ---
-title: "Random report"
+title: "Data Science Course Report 2024"
 author: 
-  - name: Jane Doe
+  - name: Mohsin Raza
     orcid: 0000-0001-2345-6789
     corresponding: true
-    email: Jane.Doe@example.org
+    email: mohsin.raza@kit.edu
     
 ---
 
